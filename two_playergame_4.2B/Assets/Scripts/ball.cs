@@ -1,36 +1,45 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
-public class ball : MonoBehaviour 
-{
-	public float ballVelocity = 1000;
-
-	Rigidbody2D rb;
-	bool isPlay;
-	int randInt;
+public class ball : MonoBehaviour {
+	
+	private Rigidbody2D rb2d;
+	private Vector2 vel;
 
 
-	void Awake()
-	{
-		rb = GetComponent<Rigidbody2D>();
-		randInt = Random.Range(1,3);
-	}
-
-	void Update()
-	{
-		if (Input.GetMouseButton(0) && isPlay == false)
-		{
-			transform.parent = null;
-			isPlay = true;
-			rb.isKinematic = false;
-			if (randInt == 1)
-			{
-				rb.AddForce(new Vector3(ballVelocity, ballVelocity, 0));
-			}
-			if (randInt == 2)
-			{
-				rb.AddForce(new Vector3(-ballVelocity, -ballVelocity, 0));
-			}
+	void GoBall(){
+		float rand = Random.Range(0, 2);
+		if(rand < 1){
+			rb2d.AddForce(new Vector2(20, -15));
+		} else {
+			rb2d.AddForce(new Vector2(-20, -15));
 		}
 	}
+
+	void Start () {
+		rb2d = GetComponent<Rigidbody2D>();
+		Invoke("GoBall", 2);
+	}
+
+	void ResetBall(){
+		vel = Vector2.zero;
+		rb2d.velocity = vel;
+		transform.position = Vector2.zero;
+	}
+
+	void RestartGame(){
+		ResetBall();
+		Invoke("GoBall", 1);
+	}
+
+	void OnCollisionEnter2D (Collision2D coll) {
+		if(coll.collider.CompareTag("Player")){
+			vel.x = rb2d.velocity.x;
+			vel.y = (rb2d.velocity.y / 2.0f) + (coll.collider.attachedRigidbody.velocity.y / 3.0f);
+			rb2d.velocity = vel;
+		}
+	}
+
+
 }

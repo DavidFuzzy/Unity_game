@@ -96,6 +96,7 @@
     <Compile Include="Assets\Scripts\Mouse_paddle.cs" />
     <Compile Include="Assets\Scripts\Paddle.cs" />
     <Compile Include="Assets\Scripts\ball.cs" />
+    <Compile Include="Assets\Scripts\levelManager.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
