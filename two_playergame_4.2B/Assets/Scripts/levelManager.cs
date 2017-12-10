@@ -7,7 +7,7 @@ public class levelManager : MonoBehaviour {
 
 	public void NextScene(string sceneSwitch)
     {
-        SceneManager.LoadScene(sceneSwitch);
+        SceneManager.LoadScene("Level_one");
     }
 
     public void exit()

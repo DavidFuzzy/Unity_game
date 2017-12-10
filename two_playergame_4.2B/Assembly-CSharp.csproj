@@ -47,11 +47,16 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\GameManager.cs" />
+     <Compile Include="Assets\Scripts\GameManager1.cs" />
+     <Compile Include="Assets\Scripts\GameManager2.cs" />
      <Compile Include="Assets\Scripts\Mouse_paddle.cs" />
+     <Compile Include="Assets\Scripts\Move.cs" />
      <Compile Include="Assets\Scripts\Paddle.cs" />
      <Compile Include="Assets\Scripts\ball.cs" />
      <Compile Include="Assets\Scripts\levelManager.cs" />
      <Compile Include="Assets\Scripts\scores.cs" />
+     <Compile Include="Assets\Scripts\scores1.cs" />
+     <Compile Include="Assets\Scripts\scores2.cs" />
  <Reference Include="Facebook.Unity.Settings">
  <HintPath>G:/2/Unity/two_playergame_4.2B/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>

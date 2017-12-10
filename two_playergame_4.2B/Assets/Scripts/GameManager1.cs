@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GameManager : MonoBehaviour {
+public class GameManager1 : MonoBehaviour {
 	public static int PlayerScore1 = 0;
 	public static int PlayerScore2 = 0;
 
@@ -32,7 +32,7 @@ public class GameManager : MonoBehaviour {
 
 
 
-		if (PlayerScore1 == 3)
+		if (PlayerScore1 == 5)
 		{
 			GUI.Label(new Rect(Screen.width / 2 - -30, 200, 2000, 1000), "PLAYER TWO WINS");
 			//theBall.SendMessage("ResetBall", null, SendMessageOptions.RequireReceiver);
@@ -40,7 +40,7 @@ public class GameManager : MonoBehaviour {
 			NextLevel();
 
 
-		} else if (PlayerScore2 == 3)
+		} else if (PlayerScore2 == 5)
 		{
 			GUI.Label(new Rect(Screen.width / 2 - -30, 200, 2000, 1000), "PLAYER ONE WINS");
 			//theBall.SendMessage("ResetBall", null, SendMessageOptions.RequireReceiver);
@@ -50,6 +50,6 @@ public class GameManager : MonoBehaviour {
 	}
 
 	void NextLevel() {
-		SceneManager.LoadScene("Level_two");
+		SceneManager.LoadScene("Level_three");
 	}
 }
