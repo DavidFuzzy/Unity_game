@@ -52,6 +52,7 @@
      <Compile Include="Assets\Scripts\Mouse_paddle.cs" />
      <Compile Include="Assets\Scripts\Move.cs" />
      <Compile Include="Assets\Scripts\Paddle.cs" />
+     <Compile Include="Assets\Scripts\Winner.cs" />
      <Compile Include="Assets\Scripts\ball.cs" />
      <Compile Include="Assets\Scripts\levelManager.cs" />
      <Compile Include="Assets\Scripts\scores.cs" />

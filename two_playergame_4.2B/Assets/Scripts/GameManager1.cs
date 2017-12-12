@@ -4,21 +4,20 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class GameManager1 : MonoBehaviour {
-	public static int PlayerScore1 = 0;
-	public static int PlayerScore2 = 0;
+	public static int PlayerScore1; //= 0;
+	public static int PlayerScore2; //= 0;
 
 	public GUISkin layout;
 
 	GameObject theBall;
-
 	void Start () {
-		theBall = GameObject.FindGameObjectWithTag("Ball");
+		theBall = GameObject.FindGameObjectWithTag ("Ball");
 	}
-
 	public static void Score (string wallID) {
 		if (wallID == "right_score")
 		{
 			PlayerScore1++;
+			print (PlayerScore1);
 		} else
 		{
 			PlayerScore2++;

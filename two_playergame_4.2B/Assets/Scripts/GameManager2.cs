@@ -4,8 +4,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class GameManager2 : MonoBehaviour {
-	public static int PlayerScore1 = 0;
-	public static int PlayerScore2 = 0;
+	public static int PlayerScore1; // = 0;
+	public static int PlayerScore2; // = 0;
 
 	public GUISkin layout;
 
@@ -50,6 +50,6 @@ public class GameManager2 : MonoBehaviour {
 	}
 
 	void NextLevel() {
-		SceneManager.LoadScene("Level_three");
+		SceneManager.LoadScene("Winner");
 	}
 }
