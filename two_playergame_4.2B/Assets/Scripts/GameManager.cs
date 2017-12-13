@@ -33,9 +33,9 @@ public class GameManager : MonoBehaviour {
 		if (PlayerScore1 == 3)
 		{
 			NextLevel();
+		}
 
-
-		} else if (PlayerScore2 == 3)
+		else if (PlayerScore2 == 3)
 		{
 			NextLevel();
 		}
