@@ -49,6 +49,7 @@
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\GameManager1.cs" />
      <Compile Include="Assets\Scripts\GameManager2.cs" />
+     <Compile Include="Assets\Scripts\LevelManagerWin.cs" />
      <Compile Include="Assets\Scripts\Mouse_paddle.cs" />
      <Compile Include="Assets\Scripts\Move.cs" />
      <Compile Include="Assets\Scripts\Paddle.cs" />

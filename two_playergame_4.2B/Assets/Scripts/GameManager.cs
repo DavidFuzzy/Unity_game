@@ -25,8 +25,8 @@ public class GameManager : MonoBehaviour {
 	}
 
 	void OnGUI () {
-		GUI.Label(new Rect(Screen.width / 2 - 150 - 12, 20, 100, 100), "" + PlayerScore1);
-		GUI.Label(new Rect(Screen.width / 2 + 150 + 12, 20, 100, 100), "" + PlayerScore2);
+		GUI.Label(new Rect(Screen.width / 2 - 150 - 0, 20, 100, 100), "" + PlayerScore1);
+		GUI.Label(new Rect(Screen.width / 2 + 150 + 0, 20, 100, 100), "" + PlayerScore2);
 
 
 

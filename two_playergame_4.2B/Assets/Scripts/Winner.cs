@@ -12,10 +12,10 @@ public class Winner : MonoBehaviour {
 
 	void OnGUI () {
 		if (PlayerOne_Total > PlayerOne_Total){
-			GUI.Label(new Rect(Screen.width / 2 - 150 - 12, 20, 100, 100), "" + "PLAYER ONE IS THE WINNER");
+			GUI.Label(new Rect(Screen.width / 2 - 0 - 12, 20, 100, 100), "" + "PLAYER ONE IS THE WINNER");
 		}
 		else{
-			GUI.Label(new Rect(Screen.width / 2 - 150 - 12, 20, 100, 100), "" + "PLAYER TWO IS THE WINNER");
+			GUI.Label(new Rect(Screen.width / 2 - 0 - 12, 20, 100, 100), "" + "PLAYER TWO IS THE WINNER");
 		}
 	
 	}
