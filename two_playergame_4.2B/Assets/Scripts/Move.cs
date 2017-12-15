@@ -15,7 +15,7 @@ public class Move : MonoBehaviour
 		startPosition = transform.position;
 	}
 
-	// Update is called once per frame
+	
 	void Update ()
 	{
 		MoveVertical ();
@@ -23,8 +23,7 @@ public class Move : MonoBehaviour
 
 	void MoveVertical()
 	{
-		transform.position = new Vector3(transform.position.x, startPosition.y + Mathf.Sin(Time.time * maxSpeed));
-		//transform.position = new Vector3(0, startPosition.y + Mathf.Sin(Time.time * maxSpeed), 0);
+		transform.position = new Vector3(transform.position.x, startPosition.y + Mathf.Sin(Time.time * maxSpeed));		
 
 		if(transform.position.y > 1f)
 		{

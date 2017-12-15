@@ -93,10 +93,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\GameManager1.cs" />
+    <Compile Include="Assets\Scripts\GameManager2.cs" />
+    <Compile Include="Assets\Scripts\LevelManagerWin.cs" />
     <Compile Include="Assets\Scripts\Mouse_paddle.cs" />
+    <Compile Include="Assets\Scripts\Move.cs" />
     <Compile Include="Assets\Scripts\Paddle.cs" />
+    <Compile Include="Assets\Scripts\Winner.cs" />
     <Compile Include="Assets\Scripts\ball.cs" />
     <Compile Include="Assets\Scripts\levelManager.cs" />
+    <Compile Include="Assets\Scripts\scores.cs" />
+    <Compile Include="Assets\Scripts\scores1.cs" />
+    <Compile Include="Assets\Scripts\scores2.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

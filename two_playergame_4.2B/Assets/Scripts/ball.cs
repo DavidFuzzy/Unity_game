@@ -33,7 +33,7 @@ public class ball : MonoBehaviour {
 		Invoke("GoBall", 1);
 	}
 
-	void OnCollisionEnter2D (Collision2D coll) {
+	private void OnCollisionEnter2D (Collision2D coll) {
 		if(coll.collider.CompareTag("Player")){
 			vel.x = rb2d.velocity.x;
 			vel.y = (rb2d.velocity.y / 2.0f) + (coll.collider.attachedRigidbody.velocity.y / 3.0f);
